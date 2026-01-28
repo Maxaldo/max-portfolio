@@ -1300,3 +1300,50 @@ html[data-theme="light"] .contact-form textarea:focus {
     gap: 0.5rem;
   }
 }
+
+/* Experience / Parcours mobile */
+@media (max-width: 768px) {
+  #experience.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .timeline {
+    width: 100%;
+    padding-left: 1.5rem;
+  }
+  
+  .timeline article {
+    margin-bottom: 1.5rem;
+  }
+  
+  .education {
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .education-list {
+    gap: 1rem;
+  }
+  
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .education-year {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .education-content h4 {
+    font-size: 1rem;
+  }
+  
+  .education-content p {
+    font-size: 0.85rem;
+  }
+}
