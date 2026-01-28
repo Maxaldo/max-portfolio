@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio interactif de Max Ronaldo Sogbossi, concepteur développeur full stack en Mastère Expert et en recherche d'alternance.">
+  <meta name="keywords" content="développeur full stack, alternance, Java, Spring Boot, React Native, Paris">
+  <meta name="author" content="Max Ronaldo Sogbossi">
+  <title>Max Ronaldo Sogbossi — Concepteur Développeur Full Stack | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="max.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="max.css">
+</head>
+<body>
+  <canvas id="galaxy" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <nav>
+      <div class="nav-brand">
+        <span class="logo">MAX<span>.</span>SOGBOSSI</span>
+        <p>Mastère Expert ITIC  Alternance 2/1</p>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#experience">Parcours</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Changer de thème">
+          <i class="fas fa-moon"></i>
+          <span>Mode sombre</span>
+        </button>
+        <a class="nav-cta" href="#contact">
+          <i class="fas fa-paper-plane"></i>
+          Me contacter
+        </a>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="hero-panel" data-tilt>
+        <p class="eyebrow">Étudiant en Mastère Expert IT A  ITIC • Recherche alternance Septembre 2025</p>
+        <h1>Développeur Full Stack Java/Spring Boot & React Native, je crée des applications web et mobiles performantes.</h1>
+        <p class="lead">
+          Polyvalent et rigoureux, je maîtrise aussi bien le backend (Java, PHP, Node.js) que le frontend (React, JavaScript) et le mobile (React Native). 
+          Je conçois des API REST sécurisées, des applications conteneurisées avec Docker et du code testé. En Mastère Expert IT à ITIC Paris, je recherche une alternance de 12 à 24 mois (rythme 2 semaines entreprise / 1 semaine école) pour apporter mes compétences à vos projets.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">Découvrir mes projets</a>
+          <a href="aldo.pdf" download class="btn secondary">
+            <i class="fas fa-download"></i>
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-card mag-card" data-tilt>
+        <img src="max.png" alt="Portrait professionnel de Max Ronaldo Sogbossi" loading="lazy" width="600" height="600">
+        <ul>
+          <li><span>Technos que j'utilise</span><strong>Java • Spring Boot • React Native</strong></li>
+          <li><span>Ce qui me passionne</span><strong>Apps web, mobile & expériences immersives</strong></li>
+          <li><span>GitHub</span><strong><a href="https://github.com/Maxaldo" target="_blank" rel="noreferrer" style="color: var(--accent);">github.com/Maxaldo</a></strong></li>
+          <li><span>Disponibilité</span><strong>Paris & télétravail</strong></li>
+          <li><span>Rythme alternance</span><strong>2 semaines entreprise / 1 semaine école</strong></li>
+        </ul>
+      </aside>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-header">
+          <p class="eyebrow">À propos de moi</p>
+          <h2>Curieux, motivé et toujours prêt à apprendre.</h2>
+          <p>
+            Étudiant en Mastère Expert ITIC Paris, je me spécialise dans le développement full stack. 
+            J'aime créer des applications qui ont du sens, de la conception à la mise en production. 
+            Mon objectif ? Rejoindre une équipe en alternance pour apprendre des meilleurs et contribuer à des projets concrets.
+          </p>
+        </div>
+        <article>
+          <h3>Ce que j'aime faire</h3>
+          <ul>
+            <li>Développer des applications web et mobiles de A à Z</li>
+            <li>Apprendre de nouvelles technologies et bonnes pratiques</li>
+            <li>Résoudre des problèmes techniques complexes</li>
+            <li>Travailler en équipe et partager mes connaissances</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Pourquoi une alternance ?</h3>
+          <ul>
+            <li>Mettre en pratique ce que j'apprends à l'école</li>
+            <li>Découvrir le monde professionnel et ses enjeux</li>
+            <li>Contribuer à des projets réels avec impact</li>
+            <li>Grandir aux côtés de développeurs expérimentés</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-header">
+          <p class="eyebrow">Mes compétences</p>
+          <h2>Technologies que je maîtrise et que j'apprends.</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>React, React Native</li>
+              <li>HTML5, CSS3, Bootstrap</li>
+            </ul>
+          </article>
+          <article class="skill">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <ul>
+              <li>Java, Spring Boot, Spring Security</li>
+              <li>Node.js, Express</li>
+              <li>PHP, Laravel, Symfony</li>
+            </ul>
+          </article>
+          <article class="skill">
+            <h3><i class="fas fa-database"></i> Bases de données</h3>
+            <ul>
+              <li>MySQL, MongoDB</li>
+              <li>UML, Merise</li>
+              <li>Modélisation de données</li>
+            </ul>
+          </article>
+          <article class="skill">
+            <h3><i class="fas fa-tools"></i> Outils & Méthodologies</h3>
+            <ul>
+              <li>Git, Docker, JUnit, Postman</li>
+              <li>Scrum, Kanban, Trello</li>
+              <li>Travail en équipe</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-header">
+          <p class="eyebrow">Mes projets</p>
+          <h2>Des applications que j'ai développées pendant mes études et stages.</h2>
+          <p>Découvrez mes projets sur <a href="https://github.com/Maxaldo" target="_blank" rel="noreferrer" style="color: var(--accent);">GitHub</a></p>
+        </div>
+        
+        <article class="project-card mag-card" data-tilt>
+          <div class="project-meta">
+            <span>API Spring Boot</span>
+            <span>2025</span>
+          </div>
+          <h3>ITIC Wallet</h3>
+          <p>API Spring Boot pour créer des cartes étudiantes digitales intégrées à Google Wallet. Gestion des étudiants, génération de cartes virtuelles, intégration avec les services Google.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Spring Boot</span><span>Google Wallet API</span><span>REST API</span>
+          </div>
+          <p>Ce que j'ai appris : intégration d'APIs tierces, génération de documents digitaux, architecture microservices.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Maxaldo/iticwallet" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Voir le code</a>
+            <a href="#contact">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="project-card mag-card" data-tilt>
+          <div class="project-meta">
+            <span>Application métier</span>
+            <span>2025</span>
+          </div>
+          <h3>E_Washing</h3>
+          <p>Projet de fin d'études : application web de gestion de laverie avec architecture 3-tiers. Suivi des commandes, paiement sécurisé, tableau de bord en temps réel.</p>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>MySQL</span><span>JWT</span><span>JavaScript</span>
+          </div>
+          <p>Ce que j'ai appris : architecture REST, sécurité JWT, développement full stack.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Maxaldo" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Voir le code</a>
+            <a href="#contact">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="project-card mag-card" data-tilt>
+          <div class="project-meta">
+            <span>Jeu vidéo</span>
+            <span>2024</span>
+          </div>
+          <h3>Tower Defense</h3>
+          <p>Jeu de défense de tours développé en Java. Système de tours, gestion des vagues d'ennemis, interface graphique interactive.</p>
+          <div class="project-tags">
+            <span>Java</span><span>JavaFX</span><span>POO</span><span>Game Development</span>
+          </div>
+          <p>Ce que j'ai appris : programmation orientée objet avancée, gestion d'événements, algorithmes de jeu.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Maxaldo/jeu-towers-defance-avec-java" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Voir le code</a>
+            <a href="#contact">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="project-card mag-card" data-tilt>
+          <div class="project-meta">
+            <span>Application web</span>
+            <span>2024</span>
+          </div>
+          <h3>Générateur de mot de passe</h3>
+          <p>Application web moderne pour générer des mots de passe sécurisés. Options de personnalisation (longueur, caractères spéciaux), interface intuitive.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Frontend</span>
+          </div>
+          <p>Ce que j'ai appris : manipulation du DOM, génération aléatoire sécurisée, design UI moderne.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Maxaldo/motdepasse-frontend" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Voir le code</a>
+            <a href="#contact">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="project-card mag-card" data-tilt>
+          <div class="project-meta">
+            <span>Application web</span>
+            <span>2024</span>
+          </div>
+          <h3>To-Do List</h3>
+          <p>Application de gestion de tâches moderne avec sauvegarde locale. Ajout, modification, suppression de tâches, persistance des données avec localStorage.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>LocalStorage</span>
+          </div>
+          <p>Ce que j'ai appris : gestion d'état côté client, persistance de données, manipulation d'événements.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Maxaldo/todolist" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Voir le code</a>
+            <a href="#contact">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="project-card mag-card" data-tilt>
+          <div class="project-meta">
+            <span>Challenge</span>
+            <span>2024</span>
+          </div>
+          <h3>Advent of Code</h3>
+          <p>Résolutions de défis algorithmiques du calendrier de l'avent du code. Exercices de programmation en Java pour améliorer mes compétences en algorithmique.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Algorithmes</span><span>Structures de données</span><span>Challenge</span>
+          </div>
+          <p>Ce que j'ai appris : résolution de problèmes complexes, optimisation d'algorithmes, structures de données avancées.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Maxaldo/AdventOfCode" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Voir le code</a>
+            <a href="#contact">En savoir plus</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-header">
+          <p class="eyebrow">Mon parcours</p>
+          <h2>Mes expériences professionnelles et formations.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <h3>Stage — Développeur web chez Ampara Formation</h3>
+            <p class="date">Juillet - Août 2025</p>
+            <p>Développement d'une application mobile de streaming immersif avec React Native. Création d'une API Node.js sécurisée avec JWT, gestion des abonnements et événements en base MySQL.</p>
+          </article>
+          <article>
+            <h3>Projet de fin d'études — E_Washing</h3>
+            <p class="date">2025 (projet académique)</p>
+            <p>Développement d'une application web de gestion de laverie en architecture 3-tiers. Conteneurisation avec Docker, API REST sécurisée (JWT) avec tests unitaires JUnit, interface admin dynamique avec JavaScript, Spring Boot et MySQL.</p>
+          </article>
+          <article>
+            <h3>Stage — Développeur web chez T-PAPY (2024)</h3>
+            <p class="date">Du 01 janvier 2024 au 30 juin 2024</p>
+            <p>Création d'interfaces responsives avec HTML5, CSS3, Bootstrap. Mise en place d'une architecture MVC avec PHP et Symfony.</p>
+          </article>
+          <article>
+            <h3>Stage — Développeur web chez EFOR Afrika</h3>
+            <p class="date">Du 02 octobre 2023 au 02 février 2024</p>
+            <p>Développement d'un site e-commerce avec paiement en ligne. Architecture MVC en PHP, création de routes et contrôleurs avec Laravel.</p>
+          </article>
+        </div>
+        <div class="education">
+          <h3>Formations</h3>
+          <div class="education-list">
+            <article class="education-item">
+              <div class="education-year">2025-2027</div>
+              <div class="education-content">
+                <h4>Mastère Expert IT Applications intelligentes</h4>
+                <p>ITIC Paris</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-year">2024-2025</div>
+              <div class="education-content">
+                <h4>Bachelor Concepteur Développeur Full Stack</h4>
+                <p>ITIC Paris</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-year">2022-2023</div>
+              <div class="education-content">
+                <h4>Licence professionnelle Systèmes Informatiques & Logiciel</h4>
+                <p>Cours Sonou, Cotonou</p>
+              </div>
+            </article>
+            <article class="education-item">
+              <div class="education-year">2019-2020</div>
+              <div class="education-content">
+                <h4>Baccalauréat Série D</h4>
+                <p>Complexe Scolaire Clé de la Réussite, Cotonou</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+          <h2>Intéressé par mon profil ? Parlons-en !</h2>
+          <p>Je suis disponible pour discuter d'une alternance ou répondre à vos questions. N'hésitez pas à me contacter par email, téléphone ou via les réseaux sociaux.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-info">
+            <h3>Mes coordonnées</h3>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email</span>
+                <a href="mailto:maxsogbossi@gmail.com">maxsogbossi@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Téléphone</span>
+                <a href="tel:+33743307010">+33 7 43 30 70 10</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Localisation</span>
+                <span>Arpajon (91) - Île-de-France</span>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h4>Réseaux sociaux</h4>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/max-ronaldo-sogbossi-4655a1221/" target="_blank" rel="noreferrer" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Maxaldo" target="_blank" rel="noreferrer" class="social-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <form class="contact-form" id="contact-form" name="contact">
+            <h3>Envoyez-moi un message</h3>
+            <p class="form-description">Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.</p>
+            <div class="form-group">
+              <label for="name">Nom complet <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email professionnel <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Alternance, projet, collaboration...">
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Dites-moi en quoi je peux vous aider..." required></textarea>
+            </div>
+            <button type="submit" class="btn primary">
+              <i class="fas fa-paper-plane"></i>
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 — Max Ronaldo Sogbossi. Portfolio conçu avec passion et souci du détail.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
